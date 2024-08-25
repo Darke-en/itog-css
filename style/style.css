@@ -28,7 +28,7 @@
 .header__text {
     margin-bottom: 30px;
     &:last-child {
-        margin-bottom: 25px;
+        margin-bottom: 0;
     }
 }
 
@@ -84,7 +84,9 @@
 }
 
 .menu__text {
-    margin-bottom: 10px;
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
 }
 
 .menu__text-border {
@@ -96,7 +98,9 @@
 }
 
 .footer__text {
-    margin-bottom: 10px;
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
 }
 
 
