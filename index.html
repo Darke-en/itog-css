@@ -10,9 +10,9 @@
 </head>
     <body class="page">
             <article class="main__wrapper">
-                <section class="container">
-                    <container class="header">
-                        <h1 class="header__main-title">Отступы в вёрстке: margin и padding</h1>
+                <section class="header">
+                    <div class="container">
+                        <h2 class="header__main-title">Отступы в вёрстке: margin и padding</h2>
 
                         <p class="header__text">
                             В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.
@@ -20,36 +20,34 @@
 
                         <p class="header__text">
                             Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.                        </p>
-                    </container>
+                    </div>
 
                 </section>
 
-                <section class="container-menu">
-                    <container class="menu__wrapper">
-                        <div class="menu">
-                            <h2 class="menu__title">
-                                Содержание:
-                            </h2>
+                <section class="section-menu">
+                    <div class="container-menu">
+                        <h2 class="menu__title">
+                            Содержание:
+                        </h2>
 
-                            <nav class="menu__links">
-                                <ol class="menu__list">
-                                    <li class="menu__text">
-                                        <a href="#1" class="menu__text-border">Отступ задается от предыдущего элемента к следующему</a>
-                                    </li>
-                                    <li class="menu__text">
-                                        <a href="#2" class="menu__text-border">Отступ задается последнему возможному элементу в DOM-дереве</a>
-                                    </li>
-                                    <li class="menu__text">
-                                        <a href="#3" class="menu__text-border">Для последнего элемента группы отступ обнуляется</a>
-                                    </li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </container>
+                        <nav class="menu__links">
+                            <ol class="menu__list">
+                                <li class="menu__text">
+                                    <a href="#1" class="menu__text-border">Отступ задается от предыдущего элемента к следующему</a>
+                                </li>
+                                <li class="menu__text">
+                                    <a href="#2" class="menu__text-border">Отступ задается последнему возможному элементу в DOM-дереве</a>
+                                </li>
+                                <li class="menu__text">
+                                    <a href="#3" class="menu__text-border">Для последнего элемента группы отступ обнуляется</a>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
                 </section>
 
-                <section class="container">
-                    <container class="header">
+                <section class="section">
+                    <div class="container">
                         <h2 class="header__title" id="1">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h2>
 
                         <div class="header__wrapper-first-img">
@@ -84,15 +82,15 @@
                             <p class="header__text">
                                 Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.
                             </p>
-                            <p class="header__text">
+                            <p class="header__text-margin">
                                 Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.
                             </p>
                         </div>
-                    </container>
+                    </div>
                 </section>
 
-                <section class="container">
-                    <container class="header">
+                <section class="section">
+                    <div class="container">
                         <h2 class="header__title" id="2">Отступ задается последнему возможному элементу в DOM-дереве</h2>
 
                         <p class="header__text">
@@ -134,11 +132,11 @@
                         <p class="header__text">
                             Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.
                         </p>
-                    </container>
+                    </div>
                 </section>
                 
-                <section class="container">
-                    <container class="header">
+                <section class="section">
+                    <div class="container">
                         <h2 class="header__title" id="3">Для последнего элемента группы отступ всегда обнуляется</h2>
 
                         <p class="header__text">
@@ -177,13 +175,13 @@
 
                         <img class="header__img" src="img/header-lastchild.png" alt="header lastchild">
 
-                    </container>
+                    </div>
                 </section>
             </article>
 
         <article class="footer">
-            <section class="footer__container-menu">
-                <container class="menu">
+            <section class="section-menu">
+                <div class="container-menu">
                     <h2 class="menu__title">
                         Подытожим:
                     </h2>
@@ -209,8 +207,8 @@
                     <p class="footer__text">
                         Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.
                     </p>
-                </container>
+                </div>
             </section>
         </article>
-    </body>
+</body>
 </html>
