@@ -65,13 +65,15 @@
 }
 
 .header__figure {
-    border: 1px solid #000000;
+    border-top: 1px solid #000000;
     margin-bottom: 30px;
 }
 
 .header__figure-text {
     padding: 15px 30px;
     color: #5E5E5E;
+    border: 1px solid #000000;
+    border-top: none;
 }
 
 .span-text-bold {
